@@ -1,7 +1,7 @@
 ﻿
 namespace EmployeeManagementSystem
 {
-    partial class AddEmployee
+    partial class AdminPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -106,9 +106,9 @@ namespace EmployeeManagementSystem
             this.label1.Location = new System.Drawing.Point(27, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 35);
+            this.label1.Size = new System.Drawing.Size(192, 35);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Автомобілі";
+            this.label1.Text = "Адмін панель";
             // 
             // panel2
             // 
@@ -420,14 +420,14 @@ namespace EmployeeManagementSystem
             this.panel4.Size = new System.Drawing.Size(1258, 348);
             this.panel4.TabIndex = 1;
             // 
-            // AddEmployee
+            // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "AddEmployee";
+            this.Name = "AdminPanel";
             this.Size = new System.Drawing.Size(1312, 869);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

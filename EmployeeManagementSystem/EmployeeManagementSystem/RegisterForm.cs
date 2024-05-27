@@ -14,7 +14,7 @@ namespace EmployeeManagementSystem
 {
     public partial class RegisterForm : Form
     {
-        //SqlConnection connect  = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WINDOWS 10\Documents\employee.mdf;Integrated Security=True;Connect Timeout=30");
+        private string connectionString = "Data Source=localhost;Initial Catalog=CarSearchSystem;Integrated Security=True";
         public RegisterForm()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace EmployeeManagementSystem
 
         private void signup_loginBtn_Click(object sender, EventArgs e)
         {
-            Form1 loginForm = new Form1();
+            Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
         }
@@ -39,76 +39,62 @@ namespace EmployeeManagementSystem
 
         private void signup_btn_Click(object sender, EventArgs e)
         {
-            //if(signup_username.Text == ""
-            //    || signup_password.Text == "")
-            //{
-            //    MessageBox.Show("Please fill all blank fields"
-            //        , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //else
-            //{
-            //    if(connect.State != ConnectionState.Open)
-            //    {
-            //        try
-            //        {
-            //            connect.Open();
-            //            // TO CHECK IF THE USER IS EXISTING ALREADY
-            //            string selectUsername = "SELECT COUNT(id) FROM users WHERE username = @user";
+            if (string.IsNullOrWhiteSpace(signup_username.Text) || string.IsNullOrWhiteSpace(signup_password.Text))
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                using (SqlConnection connect = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connect.Open();
 
-            //            using(SqlCommand checkUser = new SqlCommand(selectUsername, connect))
-            //            {
-            //                checkUser.Parameters.AddWithValue("@user", signup_username.Text.Trim());
-            //                int count = (int)checkUser.ExecuteScalar();
+                        // Перевірка, чи існує користувач з таким же ім'ям
+                        string selectUsername = "SELECT COUNT(ID) FROM Users WHERE Username = @username";
 
-            //                if(count >= 1)
-            //                {
-            //                    MessageBox.Show(signup_username.Text.Trim() + " is already taken"
-            //                        , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //                }
-            //                else
-            //                {
-            //                    DateTime today = DateTime.Today;
+                        using (SqlCommand checkUser = new SqlCommand(selectUsername, connect))
+                        {
+                            checkUser.Parameters.AddWithValue("@username", signup_username.Text.Trim());
+                            int count = (int)checkUser.ExecuteScalar();
 
-            //                    string insertData = "INSERT INTO users " +
-            //                        "(username, password, date_register) " +
-            //                        "VALUES(@username, @password, @dateReg)";
+                            if (count >= 1)
+                            {
+                                MessageBox.Show(signup_username.Text.Trim() + " is already taken", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                // Вставка нового користувача з роллю user
+                                string insertData = "INSERT INTO Users (Username, Password, Role) VALUES (@username, @password, @role)";
 
-            //                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
-            //                    {
-            //                        cmd.Parameters.AddWithValue("@username", signup_username.Text.Trim());
-            //                        cmd.Parameters.AddWithValue("@password", signup_password.Text.Trim());
-            //                        cmd.Parameters.AddWithValue("@dateReg", today);
+                                using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                                {
+                                    cmd.Parameters.AddWithValue("@username", signup_username.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@password", signup_password.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@role", "user");
 
-            //                        cmd.ExecuteNonQuery();
+                                    cmd.ExecuteNonQuery();
 
-            //                        MessageBox.Show("Registered successfully!"
-            //                            , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    MessageBox.Show("Registered successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                    Form1 loginForm = new Form1();
+                                    Login loginForm = new Login();
                                     loginForm.Show();
                                     this.Hide();
-            //                    }
-            //                }
-            //            }
-
-                        
-
-            //        }catch(Exception ex)
-            //        {
-            //            MessageBox.Show("Error: " + ex
-            //        , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-            //        finally
-            //        {
-            //            connect.Close();
-            //        }
-            //    }
-            //}
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
-
         private void signup_showPass_CheckedChanged(object sender, EventArgs e)
         {
-            //signup_password.PasswordChar = signup_showPass.Checked ? '\0' : '*';
+            signup_password.PasswordChar = signup_showPass.Checked ? '\0' : '*';
         }
     }
 }

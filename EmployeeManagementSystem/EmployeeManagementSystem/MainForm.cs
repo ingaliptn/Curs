@@ -7,19 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace EmployeeManagementSystem
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private string userRole;
+        private string userName;
+
+        public MainForm(string role, string username)
         {
             InitializeComponent();
-            var user = "user";
-            if(user != "admin")
+            userRole = role;
+            userName = username;
+            ConfigureFormBasedOnRole();
+        }
+
+        private void ConfigureFormBasedOnRole()
+        {
+            if (userRole == "user")
             {
+                // Вимкнути або приховати CRUD операції для звичайних користувачів
                 salary_btn.Visible = false;
             }
+            // Якщо роль - admin, всі кнопки залишаються доступними
+
+            // Відображення імені користувача на формі, якщо необхідно
+            greet_user.Text = $"Welcome, {userName}";
+
         }
 
         private void exit_Click(object sender, EventArgs e)
@@ -29,12 +45,12 @@ namespace EmployeeManagementSystem
 
         private void logout_btn_Click(object sender, EventArgs e)
         {
-            DialogResult check = MessageBox.Show("Are you sure you want to logout?"
-                , "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult check = MessageBox.Show("Ви впевнені що хочете вийти з акаунту?"
+                , "Повідомлення", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if(check == DialogResult.Yes)
             {
-                Form1 loginForm = new Form1();
+                Login loginForm = new Login();
                 loginForm.Show();
                 this.Hide();
             }
@@ -61,7 +77,7 @@ namespace EmployeeManagementSystem
             addEmployee1.Visible = true;
             salary1.Visible = false;
 
-            AddEmployee addEmForm = addEmployee1 as AddEmployee;
+            AdminPanel addEmForm = addEmployee1 as AdminPanel;
 
             //if(addEmForm != null)
             //{
@@ -86,8 +102,3 @@ namespace EmployeeManagementSystem
         }
     }
 }
-
-
-// THATS IT FOR THIS VIDEO, THANKS FOR WATCHING!
-// SUBSCRIBE FOR MORE C# PROJECT TUTORIALS
-// THANKS : ) 

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace EmployeeManagementSystem
 {
-    public partial class AddEmployee : UserControl
+    public partial class AdminPanel : UserControl
     {
         private string connectionString = "Data Source=localhost;Initial Catalog=CarSearchSystem;Integrated Security=True";
 
@@ -17,7 +17,7 @@ namespace EmployeeManagementSystem
         private bool isColorLoaded = false;
         private bool isEngineLoaded = false;
 
-        public AddEmployee()
+        public AdminPanel()
         {
             InitializeComponent();
             LoadAllCars(); // Завантажуємо всі автомобілі при ініціалізації

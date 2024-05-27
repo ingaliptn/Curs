@@ -42,7 +42,7 @@ namespace EmployeeManagementSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dashboard1 = new EmployeeManagementSystem.Dashboard();
-            this.addEmployee1 = new EmployeeManagementSystem.AddEmployee();
+            this.addEmployee1 = new EmployeeManagementSystem.AdminPanel();
             this.salary1 = new EmployeeManagementSystem.Salary();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -148,12 +148,12 @@ namespace EmployeeManagementSystem
             this.salary_btn.ForeColor = System.Drawing.Color.White;
             this.salary_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_Salary_male_30px;
             this.salary_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.salary_btn.Location = new System.Drawing.Point(21, 514);
+            this.salary_btn.Location = new System.Drawing.Point(21, 430);
             this.salary_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.salary_btn.Name = "salary_btn";
             this.salary_btn.Size = new System.Drawing.Size(300, 62);
             this.salary_btn.TabIndex = 4;
-            this.salary_btn.Text = "SALARY";
+            this.salary_btn.Text = "Пошук авто";
             this.salary_btn.UseVisualStyleBackColor = false;
             this.salary_btn.Click += new System.EventHandler(this.salary_btn_Click);
             // 
@@ -169,12 +169,12 @@ namespace EmployeeManagementSystem
             this.addEmployee_btn.ForeColor = System.Drawing.Color.White;
             this.addEmployee_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_30px;
             this.addEmployee_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addEmployee_btn.Location = new System.Drawing.Point(21, 426);
+            this.addEmployee_btn.Location = new System.Drawing.Point(21, 522);
             this.addEmployee_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addEmployee_btn.Name = "addEmployee_btn";
             this.addEmployee_btn.Size = new System.Drawing.Size(300, 62);
             this.addEmployee_btn.TabIndex = 3;
-            this.addEmployee_btn.Text = "Додати автомобіль";
+            this.addEmployee_btn.Text = "Адмін панель";
             this.addEmployee_btn.UseVisualStyleBackColor = false;
             this.addEmployee_btn.Click += new System.EventHandler(this.addEmployee_btn_Click);
             // 
@@ -207,9 +207,9 @@ namespace EmployeeManagementSystem
             this.greet_user.Location = new System.Drawing.Point(82, 229);
             this.greet_user.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.greet_user.Name = "greet_user";
-            this.greet_user.Size = new System.Drawing.Size(174, 29);
+            this.greet_user.Size = new System.Drawing.Size(89, 29);
             this.greet_user.TabIndex = 1;
-            this.greet_user.Text = "Welcome, User";
+            this.greet_user.Text = "Вітаю, ";
             // 
             // pictureBox1
             // 
@@ -296,6 +296,6 @@ namespace EmployeeManagementSystem
         private System.Windows.Forms.Panel panel3;
         private Salary salary1;
         private Dashboard dashboard1;
-        private AddEmployee addEmployee1;
+        private AdminPanel addEmployee1;
     }
 }
