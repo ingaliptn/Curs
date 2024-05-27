@@ -1,5 +1,5 @@
 ﻿
-namespace EmployeeManagementSystem
+namespace CarsManagementSystem
 {
     partial class RegisterForm
     {
@@ -153,7 +153,7 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_100px;
+            this.pictureBox1.Image = global::CarsManagementSystem.Properties.Resources.icons8_employee_card_100px;
             this.pictureBox1.Location = new System.Drawing.Point(79, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);

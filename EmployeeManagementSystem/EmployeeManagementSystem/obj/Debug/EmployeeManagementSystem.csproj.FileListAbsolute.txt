@@ -36,10 +36,10 @@ E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\Employ
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.MainForm.resources
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.RegisterForm.resources
-E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Salary.resources
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.GenerateResource.cache
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.AdminPanel.resources
 E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Login.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.FindCar.resources

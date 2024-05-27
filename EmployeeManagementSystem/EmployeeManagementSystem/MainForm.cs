@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace EmployeeManagementSystem
+namespace CarsManagementSystem
 {
     public partial class MainForm : Form
     {
         private string userRole;
-        private string userName;
+        private string username;
 
         public MainForm(string role, string username)
         {
             InitializeComponent();
             userRole = role;
-            userName = username;
+            this.username = username;
             ConfigureFormBasedOnRole();
         }
 
@@ -34,7 +34,7 @@ namespace EmployeeManagementSystem
             // Якщо роль - admin, всі кнопки залишаються доступними
 
             // Відображення імені користувача на формі, якщо необхідно
-            greet_user.Text = $"Welcome, {userName}";
+            greet_user.Text = $"Вітаю, {username}";
 
         }
 
@@ -92,12 +92,8 @@ namespace EmployeeManagementSystem
             addEmployee1.Visible = false;
             salary1.Visible = true;
 
-            Salary salaryForm = salary1 as Salary;
+            FindCar salaryForm = salary1 as FindCar;
 
-            if(salaryForm != null)
-            {
-                salaryForm.RefreshData();
-            }
 
         }
     }

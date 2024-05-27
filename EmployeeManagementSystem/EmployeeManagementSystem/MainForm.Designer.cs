@@ -1,5 +1,5 @@
 ﻿
-namespace EmployeeManagementSystem
+namespace CarsManagementSystem
 {
     partial class MainForm
     {
@@ -41,9 +41,9 @@ namespace EmployeeManagementSystem
             this.greet_user = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dashboard1 = new EmployeeManagementSystem.Dashboard();
-            this.addEmployee1 = new EmployeeManagementSystem.AdminPanel();
-            this.salary1 = new EmployeeManagementSystem.Salary();
+            this.dashboard1 = new CarsManagementSystem.Dashboard();
+            this.addEmployee1 = new CarsManagementSystem.AdminPanel();
+            this.salary1 = new CarsManagementSystem.FindCar();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -127,7 +127,7 @@ namespace EmployeeManagementSystem
             this.logout_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
             this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_btn.ForeColor = System.Drawing.Color.White;
-            this.logout_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_logout_rounded_up_filled_25px;
+            this.logout_btn.Image = global::CarsManagementSystem.Properties.Resources.icons8_logout_rounded_up_filled_25px;
             this.logout_btn.Location = new System.Drawing.Point(16, 795);
             this.logout_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logout_btn.Name = "logout_btn";
@@ -146,7 +146,7 @@ namespace EmployeeManagementSystem
             this.salary_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salary_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salary_btn.ForeColor = System.Drawing.Color.White;
-            this.salary_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_Salary_male_30px;
+            this.salary_btn.Image = global::CarsManagementSystem.Properties.Resources.icons8_Salary_male_30px;
             this.salary_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.salary_btn.Location = new System.Drawing.Point(21, 430);
             this.salary_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -167,7 +167,7 @@ namespace EmployeeManagementSystem
             this.addEmployee_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEmployee_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_btn.ForeColor = System.Drawing.Color.White;
-            this.addEmployee_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_30px;
+            this.addEmployee_btn.Image = global::CarsManagementSystem.Properties.Resources.icons8_employee_card_30px;
             this.addEmployee_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addEmployee_btn.Location = new System.Drawing.Point(21, 522);
             this.addEmployee_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -188,7 +188,7 @@ namespace EmployeeManagementSystem
             this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboard_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboard_btn.ForeColor = System.Drawing.Color.White;
-            this.dashboard_btn.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_dashboard_30px;
+            this.dashboard_btn.Image = global::CarsManagementSystem.Properties.Resources.icons8_dashboard_30px;
             this.dashboard_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboard_btn.Location = new System.Drawing.Point(21, 338);
             this.dashboard_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -213,7 +213,7 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_100px;
+            this.pictureBox1.Image = global::CarsManagementSystem.Properties.Resources.icons8_employee_card_100px;
             this.pictureBox1.Location = new System.Drawing.Point(93, 69);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
@@ -294,7 +294,7 @@ namespace EmployeeManagementSystem
         private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private Salary salary1;
+        private FindCar salary1;
         private Dashboard dashboard1;
         private AdminPanel addEmployee1;
     }

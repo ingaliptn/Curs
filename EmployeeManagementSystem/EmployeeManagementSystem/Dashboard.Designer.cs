@@ -1,5 +1,5 @@
 ﻿
-namespace EmployeeManagementSystem
+namespace CarsManagementSystem
 {
     partial class Dashboard
     {
@@ -106,7 +106,7 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_group_background_selected_60px;
+            this.pictureBox3.Image = global::CarsManagementSystem.Properties.Resources.icons8_group_background_selected_60px;
             this.pictureBox3.Location = new System.Drawing.Point(30, 42);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
@@ -152,7 +152,7 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_group_background_selected_filled_60px;
+            this.pictureBox2.Image = global::CarsManagementSystem.Properties.Resources.icons8_group_background_selected_filled_60px;
             this.pictureBox2.Location = new System.Drawing.Point(24, 42);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
@@ -199,7 +199,7 @@ namespace EmployeeManagementSystem
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EmployeeManagementSystem.Properties.Resources.icons8_employee_card_60px_1;
+            this.pictureBox1.Image = global::CarsManagementSystem.Properties.Resources.icons8_employee_card_60px_1;
             this.pictureBox1.Location = new System.Drawing.Point(27, 42);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
@@ -221,7 +221,7 @@ namespace EmployeeManagementSystem
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::EmployeeManagementSystem.Properties.Resources.pexels_jane_doan_1024248;
+            this.pictureBox4.Image = global::CarsManagementSystem.Properties.Resources.pexels_jane_doan_1024248;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";

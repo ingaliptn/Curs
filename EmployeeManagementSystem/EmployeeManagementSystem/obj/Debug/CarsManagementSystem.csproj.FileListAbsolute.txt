@@ -1,0 +1,15 @@
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe.config
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.exe
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\bin\Debug\EmployeeManagementSystem.pdb
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.csproj.AssemblyReference.cache
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.AdminPanel.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.Dashboard.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.Login.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.MainForm.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Properties.Resources.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.RegisterForm.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.FindCar.resources
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.csproj.GenerateResource.cache
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\CarsManagementSystem.csproj.CoreCompileInputs.cache
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
+E:\Trash\Curs\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb

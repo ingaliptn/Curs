@@ -1,5 +1,5 @@
 ﻿
-namespace EmployeeManagementSystem
+namespace CarsManagementSystem
 {
     partial class AdminPanel
     {
@@ -29,7 +29,7 @@ namespace EmployeeManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvCars = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,8 +47,8 @@ namespace EmployeeManagementSystem
             this.addEmployee_deleteBtn = new System.Windows.Forms.Button();
             this.addEmployee_updateBtn = new System.Windows.Forms.Button();
             this.addEmployee_addBtn = new System.Windows.Forms.Button();
-            this.addEmployee_importBtn = new System.Windows.Forms.Button();
-            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
+            this.importBtn = new System.Windows.Forms.Button();
+            this.pictureBoxCar = new System.Windows.Forms.PictureBox();
             this.cmbColor = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@ namespace EmployeeManagementSystem
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addEmployee_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,14 +80,14 @@ namespace EmployeeManagementSystem
             // 
             this.dgvCars.AllowUserToAddRows = false;
             this.dgvCars.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCars.EnableHeadersVisualStyles = false;
             this.dgvCars.Location = new System.Drawing.Point(33, 91);
@@ -135,8 +135,8 @@ namespace EmployeeManagementSystem
             this.panel3.Controls.Add(this.addEmployee_deleteBtn);
             this.panel3.Controls.Add(this.addEmployee_updateBtn);
             this.panel3.Controls.Add(this.addEmployee_addBtn);
-            this.panel3.Controls.Add(this.addEmployee_importBtn);
-            this.panel3.Controls.Add(this.addEmployee_picture);
+            this.panel3.Controls.Add(this.importBtn);
+            this.panel3.Controls.Add(this.pictureBoxCar);
             this.panel3.Controls.Add(this.cmbColor);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
@@ -306,35 +306,35 @@ namespace EmployeeManagementSystem
             this.addEmployee_addBtn.UseVisualStyleBackColor = false;
             this.addEmployee_addBtn.Click += new System.EventHandler(this.addEmployee_addBtn_Click);
             // 
-            // addEmployee_importBtn
+            // importBtn
             // 
-            this.addEmployee_importBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.addEmployee_importBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addEmployee_importBtn.FlatAppearance.BorderSize = 0;
-            this.addEmployee_importBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
-            this.addEmployee_importBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
-            this.addEmployee_importBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addEmployee_importBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployee_importBtn.ForeColor = System.Drawing.Color.White;
-            this.addEmployee_importBtn.Location = new System.Drawing.Point(964, 255);
-            this.addEmployee_importBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.addEmployee_importBtn.Name = "addEmployee_importBtn";
-            this.addEmployee_importBtn.Size = new System.Drawing.Size(123, 35);
-            this.addEmployee_importBtn.TabIndex = 13;
-            this.addEmployee_importBtn.Text = "Import";
-            this.addEmployee_importBtn.UseVisualStyleBackColor = false;
+            this.importBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.importBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.importBtn.FlatAppearance.BorderSize = 0;
+            this.importBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.importBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(138)))));
+            this.importBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.importBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.importBtn.ForeColor = System.Drawing.Color.White;
+            this.importBtn.Location = new System.Drawing.Point(964, 255);
+            this.importBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.importBtn.Name = "importBtn";
+            this.importBtn.Size = new System.Drawing.Size(123, 35);
+            this.importBtn.TabIndex = 13;
+            this.importBtn.Text = "Import";
+            this.importBtn.UseVisualStyleBackColor = false;
             // 
-            // addEmployee_picture
+            // pictureBoxCar
             // 
-            this.addEmployee_picture.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.addEmployee_picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addEmployee_picture.Location = new System.Drawing.Point(965, 113);
-            this.addEmployee_picture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.addEmployee_picture.Name = "addEmployee_picture";
-            this.addEmployee_picture.Size = new System.Drawing.Size(122, 140);
-            this.addEmployee_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.addEmployee_picture.TabIndex = 12;
-            this.addEmployee_picture.TabStop = false;
+            this.pictureBoxCar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pictureBoxCar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCar.Location = new System.Drawing.Point(965, 113);
+            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxCar.Name = "pictureBoxCar";
+            this.pictureBoxCar.Size = new System.Drawing.Size(122, 140);
+            this.pictureBoxCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCar.TabIndex = 12;
+            this.pictureBoxCar.TabStop = false;
             // 
             // cmbColor
             // 
@@ -434,7 +434,7 @@ namespace EmployeeManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dgvCars)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addEmployee_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -458,8 +458,8 @@ namespace EmployeeManagementSystem
         private System.Windows.Forms.Button addEmployee_deleteBtn;
         private System.Windows.Forms.Button addEmployee_updateBtn;
         private System.Windows.Forms.Button addEmployee_addBtn;
-        private System.Windows.Forms.Button addEmployee_importBtn;
-        private System.Windows.Forms.PictureBox addEmployee_picture;
+        private System.Windows.Forms.Button importBtn;
+        private System.Windows.Forms.PictureBox pictureBoxCar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbModel;
         private System.Windows.Forms.ComboBox cmbMake;

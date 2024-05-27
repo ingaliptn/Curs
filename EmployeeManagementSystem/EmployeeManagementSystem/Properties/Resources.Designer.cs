@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EmployeeManagementSystem.Properties {
+namespace CarsManagementSystem.Properties {
     using System;
     
     

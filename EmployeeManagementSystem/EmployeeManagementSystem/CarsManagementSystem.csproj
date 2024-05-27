@@ -52,13 +52,16 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Car.cs" />
+    <Compile Include="CarService.cs" />
+    <Compile Include="ComboBoxService.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeData.cs" />
+    <Compile Include="DatabaseService.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,13 +82,14 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Salary.cs">
+    <Compile Include="FindCar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Salary.Designer.cs">
-      <DependentUpon>Salary.cs</DependentUpon>
+    <Compile Include="FindCar.Designer.cs">
+      <DependentUpon>FindCar.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalaryData.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserService.cs" />
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,8 +115,8 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salary.resx">
-      <DependentUpon>Salary.cs</DependentUpon>
+    <EmbeddedResource Include="FindCar.resx">
+      <DependentUpon>FindCar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,10 +141,9 @@
     <Content Include="Assets\icons8_group_background_selected_filled_60px.png" />
     <Content Include="Assets\icons8_logout_rounded_up_filled_25px.png" />
     <Content Include="Assets\icons8_Salary_male_30px.png" />
+    <Content Include="images\toyota_camry.jpeg" />
     <None Include="Resources\pexels-jane-doan-1024248.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Directory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
